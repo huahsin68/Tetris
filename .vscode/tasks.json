@@ -1,0 +1,61 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "Main.cpp",
+                "GameLevel.cpp",
+                "GameLevelPlayState.cpp",
+                "GameLevelState.cpp",
+                "GameObject.cpp",
+                "Block.cpp",
+                "Resource.cpp",
+                "StateController.cpp",
+                "Tetrimino.cpp",
+                "TetriminoI.cpp",
+                "TetriminoT.cpp",
+                "TetriminoJ.cpp",
+                "TetriminoL.cpp",
+                "TetriminoO.cpp",
+                "TetriminoS.cpp",
+                "TetriminoZ.cpp",
+                "BlockWatcher.cpp",
+                "Preview.cpp",
+                "Background.cpp",
+                "Score.cpp",
+                "Text.cpp",
+                "GameLevelMenuState.cpp",
+                "GameLevelGameOverState.cpp",
+                "Screen.cpp",
+                "GameOverScreen.cpp",
+                "MenuScreen.cpp",
+                "-I/home/kokhoe/tool/box2d-2.4.1/include",
+                "-I/home/kokhoe/tool/glm-0.9.9.6",
+                "-I${workspaceFolder}/hdr",
+                "-L/home/kokhoe/tool/box2d-2.4.1/bin",
+                "-lGLEW",
+                "-lGL",
+                "-lglut",
+                "-lbox2d",
+                "-o",
+                "/home/kokhoe/workspacec/Tetris/Debug/tetris"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tetris Task."
+        }
+    ],
+    "version": "2.0.0"
+}
